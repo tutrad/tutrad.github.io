@@ -1,0 +1,23 @@
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+
+#app {
+  width: 100%;
+}
+/* Aplica Montserrat a todos los elementos de texto */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilo adicional para encabezados */
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  /* Agrega estilos adicionales según sea necesario */
+}
+
+/* Estilo adicional para párrafos */
+p {
+  font-family: 'Montserrat', sans-serif;
+  /* Agrega estilos adicionales según sea necesario */
+}
+
