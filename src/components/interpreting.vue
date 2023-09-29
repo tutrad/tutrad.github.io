@@ -25,12 +25,12 @@
     </div>
   </div>
  
-    <a href="/translation" style="display: none;">Servicios de Traducción de Español a Inglés y de Alemán a Inglés | Unsere Übersetzungs- und Dolmetscherdienste für Spanisch-Englisch und Deutsch-Englisch</a>
-    <a href="/proofreading" style="display: none;">Servicios de Revisión de documentos de Español a Inglés y de Alemán a Inglés | Unsere Lektoratsdienste für Spanisch-Englisch und Deutsch-Englisch</a>
-    <a href="/interpreting" style="display: none;">Servicios de Interpretación de Español a Inglés y de Alemán a Inglés | Unsere Dolmetscherdienste für Spanisch-Englisch und Deutsch-Englisch</a>
-    <a href="/contact" style="display: none;">Contáctanos para más información, recibe presupuesto sin compromiso | Kontaktieren Sie uns für weitere Informationen, erhalten Sie unverbindlich ein Angebot</a>
-    <a href="/join" style="display: none;">Trabaja con nosotros, ofrece tus servicios | Arbeiten Sie mit uns, bieten Sie Ihre Dienstleistungen an</a>
-    <a href="/about" style="display: none;">Más información sobre nuestra empresa | Weitere Informationen über unser Unternehmen</a>
+    <a href="/#/translation" style="display: none;">Servicios de Traducción de Español a Inglés y de Alemán a Inglés | Unsere Übersetzungs- und Dolmetscherdienste für Spanisch-Englisch und Deutsch-Englisch</a>
+    <a href="/#/proofreading" style="display: none;">Servicios de Revisión de documentos de Español a Inglés y de Alemán a Inglés | Unsere Lektoratsdienste für Spanisch-Englisch und Deutsch-Englisch</a>
+    <a href="/#/interpreting" style="display: none;">Servicios de Interpretación de Español a Inglés y de Alemán a Inglés | Unsere Dolmetscherdienste für Spanisch-Englisch und Deutsch-Englisch</a>
+    <a href="/#/contact" style="display: none;">Contáctanos para más información, recibe presupuesto sin compromiso | Kontaktieren Sie uns für weitere Informationen, erhalten Sie unverbindlich ein Angebot</a>
+    <a href="/#/join" style="display: none;">Trabaja con nosotros, ofrece tus servicios | Arbeiten Sie mit uns, bieten Sie Ihre Dienstleistungen an</a>
+    <a href="/#/about" style="display: none;">Más información sobre nuestra empresa | Weitere Informationen über unser Unternehmen</a>
 </template>
 
 <script>

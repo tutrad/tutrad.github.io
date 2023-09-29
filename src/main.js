@@ -3,7 +3,7 @@ import App from "./App.vue";
 import { createPinia } from 'pinia';
 import "./scss/styles.scss";
 import * as bootstrap from "bootstrap";
-import { createRouter, createWebHistory } from "vue-router"; // Cambia a createWebHashHistory
+import { createRouter, createWebHashHistory } from "vue-router"; // Cambia a createWebHashHistory
 import Home from "./components/Home.vue";
 import Translation from "./components/translation.vue";
 import About from "./components/about.vue";
@@ -23,7 +23,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(), // Cambia a createWebHashHistory
+  history: createWebHashHistory(), // Cambia a createWebHashHistory
   routes,
 });
 
