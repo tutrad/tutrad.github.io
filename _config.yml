@@ -1,0 +1,10 @@
+plugins:
+  - jekyll-redirect-from
+
+gems:
+  - jekyll-redirect-from
+
+# Configuración de redirección HTTP a HTTPS
+collections:
+  redirects:
+    output: true
