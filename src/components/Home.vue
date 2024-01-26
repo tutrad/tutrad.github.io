@@ -211,6 +211,28 @@
       </button>
     </div>
 
+    <div class="container">
+  <div class="row mt-5">
+    <div class="col-md-8">
+      <p class="italic-text">
+        {{ supportTexts[currentLanguage] }}
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 image-container"> 
+      <a href="/#/support">
+        <div class="text-overlay"></div>
+        <img
+          src="@/assets/imgsupport1.webp"
+          alt="logo JCYL"
+          style="max-width: 100%; height: auto;"
+        />
+      </a>
+    </div>
+  </div>
+</div>
+
     <div v-if="showBanner" class="cookie-banner">
       <p>
         {{
@@ -295,10 +317,16 @@ export default defineComponent({
       ],
     };
 
+    const supportTexts = {
+      es: "Actividad apoyada por :",     
+      en: "Activity supported by:",
+      de: "Aktivität unterstützt von:",
+    };
+
     const cookieBannerTexts = {
-      es: "Este sitio web utiliza cookies para garantizar que obtenga la mejor experiencia en nuestro sitio web. ",
+      es: "Este sitio web utiliza cookies para garantizar que obtenga la mejor experiencia. ",
       de: "Diese Website verwendet Cookies, um sicherzustellen, dass Sie die beste Erfahrung auf unserer Website erhalten. ",
-      en: "This website uses cookies to ensure you get the best experience on our website. ",
+      en: "This website uses cookies to ensure you get the best experience. ",
     };
 
     const privacyPolicyTexts = {
@@ -341,19 +369,17 @@ export default defineComponent({
       languageWelcomeTexts.length;
   }
 };
-
-
-    // Inicia el carrusel automáticamente
+   
     const startCarousel = () => {
       interval.value = setInterval(nextSlide, 4000);
     };
 
-    // Detiene el carrusel cuando el componente se monta
+    
     onMounted(() => {
       startCarousel();
     });
 
-    // Detiene el carrusel cuando el componente se desmonta
+   
     watch(
       () => router.currentRoute.value.fullPath,
       () => {
@@ -374,12 +400,46 @@ export default defineComponent({
       privacyPolicyTexts,
       acceptButtonTexts,
       isMobile,
+      supportTexts,
     };
   },
 });
 </script>
 
 <style scoped>
+.container {
+    position: relative;
+  }
+
+  .image-container {
+    cursor: pointer;
+    transition: filter 0.3s ease-in-out;
+  }
+
+  .image-container:hover {
+    filter: brightness(0.7); /* Ajusta el brillo para oscurecer al pasar el cursor */
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(44, 28, 28);
+    font-weight: bold;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .image-container:hover .text-overlay {
+    opacity: 1; 
+  }
+
+  .italic-text {
+    /* display: none; */
+    font-style: italic;
+    font-size: 10px;
+  }
 .carousel-inner img {
   max-width: 100%;
   height: auto;

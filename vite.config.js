@@ -11,10 +11,14 @@ export default defineConfig({
     },
   },
   server: {
-    // Configura la política de caché para recursos estáticos (por ejemplo, 1 año).
-    // Ajusta maxAge según tus necesidades.
+
     hmr: {
       maxAge: 31536000, // 1 año en segundos
     },
-  }
+    headers: {
+      'Cache-Control': 'public, max-age=31536001, immutable',
+      'Content-Security-Policy': "object-src 'none'; script-src 'self' 'unsafe-inline'",
+
+    },
+  },
 })

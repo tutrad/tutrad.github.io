@@ -11,6 +11,7 @@ import Contact from "./components/contact.vue";
 import Interpreting from "./components/interpreting.vue";
 import Join from "./components/join.vue";
 import Proofreading from "./components/proofreading.vue";
+import Support from "./components/support.vue";
 
 const routes = [
   { path: "/", component: Home, name: "home", props: true },
@@ -20,6 +21,7 @@ const routes = [
   { path: "/interpreting", component: Interpreting, name: "interpreting" },
   { path: "/join", component: Join, name: "join" },
   { path: "/proofreading", component: Proofreading, name: "proofreading" },
+  { path: "/support", component: Support, name: "support" },
 ];
 
 const router = createRouter({
